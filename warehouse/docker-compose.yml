@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: warehouse-container
+    environment:
+      POSTGRES_USER: client
+      POSTGRES_PASSWORD: 123
+      POSTGRES_DB: warehouse
+      POSTGRES_HOST: localhost
+      POSTGRES_PORT: 5432
+      POSTGRES_SSL_MODE: disable
+    ports:
+      - "5432:5432"

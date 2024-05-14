@@ -1,0 +1,7 @@
+db:
+  host: "localhost"
+  port: "5432"
+  user: "client"
+  db_name: "warehouse"
+  password: "123"
+  ssl_mode: "disable"
